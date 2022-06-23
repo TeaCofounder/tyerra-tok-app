@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "co": "sui-mono commit",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -14,7 +15,14 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@s-ui/mono": "^2.30.0",
     "eslint": "8.18.0",
-    "eslint-config-next": "12.1.6"
+    "eslint-config-next": "12.1.6",
+    "standard": "^17.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/standard/esLintrc.json"
+    ]
   }
 }
