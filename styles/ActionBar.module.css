@@ -1,0 +1,19 @@
+.actionbar {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+  z-index: 1;
+}
+
+.action {
+  color: white;
+  background-color: transparent;
+  border: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  align-items: center;
+}
