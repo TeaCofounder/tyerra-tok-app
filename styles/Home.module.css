@@ -1,40 +1,31 @@
 .container {
+  background-color: #fff;
+  display: grid;
+  height: 100vh;
+  overflow: hidden;
   padding: 0;
+  place-content: center;
 }
 
 .main {
-  min-height: 100vh;
-  padding: 0;
   display: block;
+  height: auto;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  width: 100vw;
 }
 
 .header {
-  top: 0;
-  color: white;
-  width: 100%;
-  display: flex;
-  padding: 15px 15px 15px 0px;
-  z-index: 1;
-  position: fixed;
+  align-items: center;
   box-sizing: border-box;
-  align-items: center;
+  color: white;
+  display: flex;
   justify-content: flex-start;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+  padding: 15px 15px 15px 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .logo {
